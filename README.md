@@ -1,3 +1,16 @@
+Big thanks to people from NARI LABS for allowing us to use this model for free! This is the best opensource model available..
+
+1. Go and download everything from NARI-Labs github page.. Install everything as their tutorial suggest then come back and do the next.
+Just reinstall torch with this command :
+
+pip install --pre torch==2.9.0.dev20250901+cu128 torchvision==0.24.0.dev20250901+cu128 torchaudio==0.24.0.dev20250901+cu128 --index-url https://download.pytorch.org/whl/nightly/cu128
+or if that fails:
+
+pip install --pre --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+
+(Check requirements.txt for exact python libraries and versions if needed)
+
+
 Files you need to replace
 model.py
 Location:
