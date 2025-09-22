@@ -17,7 +17,7 @@ Requires-Dist: triton-windows>=3.3.0; sys_platform == "win32"
 Requires-Dist: triton>=3.3.0; sys_platform == "linux"
 
 
-✅ Replace those two files in those exact locations, and your patched setup will work with PyTorch 2.9/2.10 + CUDA 12.8 on your RTX 50xxTi.
+✅ Replace those two files in those exact locations, and your patched setup will work with PyTorch 2.9/2.10 + CUDA 12.8 on your RTX 50xx.
 
 
 
