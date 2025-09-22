@@ -1,5 +1,33 @@
+Files you need to replace
+model.py
+Location:
+<your project folder>\dia\model.py
+
+This is the Dia project’s source file where we patched load_audio to use soundfile + DAC instead of TorchCodec.
+METADATA
+Location inside your virtual environment:
+<your project folder>\.venv\Lib\site-packages\nari_tts-0.1.0.dist-info\METADATA
+
+Here we edited the dependency list, replacing the hard-pinned versions with relaxed requirements:
+
+Requires-Dist: soundfile>=0.13.1
+Requires-Dist: torch>=2.8.0.dev
+Requires-Dist: torchaudio>=2.8.0.dev
+Requires-Dist: triton-windows>=3.3.0; sys_platform == "win32"
+Requires-Dist: triton>=3.3.0; sys_platform == "linux"
+
+
+✅ Replace those two files in those exact locations, and your patched setup will work with PyTorch 2.9/2.10 + CUDA 12.8 on your RTX 50xxTi.
+
+
+
+
+
+
 🔧 Guide: Modifying nari-tts 0.1.0 Metadata and Environment
 1. Patched nari_tts-0.1.0.dist-info
+
+Replace
 
 The original METADATA file inside:
 .venv\Lib\site-packages\nari_tts-0.1.0.dist-info\METADATA
