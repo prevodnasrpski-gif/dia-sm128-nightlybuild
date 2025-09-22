@@ -1,0 +1,461 @@
+Metadata-Version: 2.4
+Name: nari-tts
+Version: 0.1.0
+Summary: Dia - A text-to-speech model for dialogue generation
+Project-URL: Homepage, https://github.com/nari-labs/dia
+Project-URL: Bug Tracker, https://github.com/nari-labs/dia/issues
+Author-email: Nari Labs <contact@narilabs.ai>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2025 Nari Labs
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: descript-audio-codec>=1.0.0
+Requires-Dist: gradio>=5.25.2
+Requires-Dist: huggingface-hub>=0.30.2
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pydantic>=2.11.3
+Requires-Dist: safetensors>=0.5.3
+Requires-Dist: soundfile>=0.13.1
+Requires-Dist: torch>=2.8.0.dev
+Requires-Dist: torchaudio>=2.8.0.dev
+Requires-Dist: triton-windows>=3.3.0; sys_platform == "win32"
+Requires-Dist: triton>=3.3.0; sys_platform == 'linux'
+Description-Content-Type: text/markdown
+
+<p align="center">
+<a href="https://github.com/nari-labs/dia">
+<img src="./dia/static/images/banner.png">
+</a>
+</p>
+<p align="center">
+<a href="https://tally.so/r/meokbo" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/Join-Waitlist-white?style=for-the-badge"></a>
+<a href="https://discord.gg/bJq6vjRRKv" target="_blank"><img src="https://img.shields.io/badge/Discord-Join%20Chat-7289DA?logo=discord&style=for-the-badge"></a>
+<a href="https://github.com/nari-labs/dia/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge" alt="LICENSE"></a>
+</p>
+<p align="center">
+<a href="https://huggingface.co/nari-labs/Dia-1.6B-0626"><img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-lg-dark.svg" alt="Model on HuggingFace" height=42 ></a>
+<a href="https://huggingface.co/spaces/nari-labs/Dia-1.6B"><img src="https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg-dark.svg" alt="Space on HuggingFace" height=38></a>
+</p>
+
+Dia is a 1.6B parameter text to speech model created by Nari Labs.
+
+**UPDATE 🤗(06/27)**: Dia is now available through [Hugging Face Transformers](https://github.com/huggingface/transformers)!
+
+Dia **directly generates highly realistic dialogue from a transcript**. You can condition the output on audio, enabling emotion and tone control. The model can also produce nonverbal communications like laughter, coughing, clearing throat, etc.
+
+To accelerate research, we are providing access to pretrained model checkpoints and inference code. The model weights are hosted on [Hugging Face](https://huggingface.co/nari-labs/Dia-1.6B-0626). The model only supports English generation at the moment.
+
+We also provide a [demo page](https://yummy-fir-7a4.notion.site/dia) comparing our model to [ElevenLabs Studio](https://elevenlabs.io/studio) and [Sesame CSM-1B](https://github.com/SesameAILabs/csm).
+
+- We have a ZeroGPU Space running! Try it now [here](https://huggingface.co/spaces/nari-labs/Dia-1.6B-0626). Thanks to the HF team for the support :)
+- Join our [discord server](https://discord.gg/bJq6vjRRKv) for community support and access to new features.
+- Play with a larger version of Dia: generate fun conversations, remix content, and share with friends. 🔮 Join the [waitlist](https://tally.so/r/meokbo) for early access.
+
+## Generation Guidelines
+
+- Keep input text length moderate 
+    - Short input (corresponding to under 5s of audio) will sound unnatural
+    - Very long input (corresponding to over 20s of audio) will make the speech unnaturally fast.
+- Use non-verbal tags sparingly, from the list in the README. Overusing or using unlisted non-verbals may cause weird artifacts.
+- Always begin input text with `[S1]`, and always alternate between `[S1]` and `[S2]` (i.e. `[S1]`... `[S1]`... is not good)
+- When using audio prompts (voice cloning), follow these instructions carefully:
+    - Provide the transcript of the to-be cloned audio before the generation text.
+    - Transcript must use `[S1]`, `[S2]` speaker tags correctly (i.e. single speaker: `[S1]`..., two speakers: `[S1]`... `[S2]`...)
+    - Duration of the to-be cloned audio should be 5~10 seconds for the best results.
+        (Keep in mind: 1 second ≈ 86 tokens)
+- Put `[S1]` or `[S2]` (the second-to-last speaker's tag) at the end of the audio to improve audio quality at the end
+
+## Quickstart
+
+### Transformers Support
+
+We now have a [Hugging Face Transformers](https://github.com/huggingface/transformers) implementation of Dia! You should install `main` branch of `transformers` to use it. See [hf.py](hf.py) for more information.
+
+<details>
+<summary>View more details</summary>
+
+Install `main` branch of `transformers`
+
+```bash
+pip install git+https://github.com/huggingface/transformers.git
+# or install with uv
+uv pip install git+https://github.com/huggingface/transformers.git
+```
+
+Run `hf.py`. The file is as below.
+
+```python
+from transformers import AutoProcessor, DiaForConditionalGeneration
+
+
+torch_device = "cuda"
+model_checkpoint = "nari-labs/Dia-1.6B-0626"
+
+text = [
+    "[S1] Dia is an open weights text to dialogue model. [S2] You get full control over scripts and voices. [S1] Wow. Amazing. (laughs) [S2] Try it now on Git hub or Hugging Face."
+]
+processor = AutoProcessor.from_pretrained(model_checkpoint)
+inputs = processor(text=text, padding=True, return_tensors="pt").to(torch_device)
+
+model = DiaForConditionalGeneration.from_pretrained(model_checkpoint).to(torch_device)
+outputs = model.generate(
+    **inputs, max_new_tokens=3072, guidance_scale=3.0, temperature=1.8, top_p=0.90, top_k=45
+)
+
+outputs = processor.batch_decode(outputs)
+processor.save_audio(outputs, "example.mp3")
+```
+
+</details>
+
+### Run with this repo
+
+<details>
+<summary> Install via pip </summary>
+
+```bash
+# Clone this repository
+git clone https://github.com/nari-labs/dia.git
+cd dia
+
+# Optionally
+python -m venv .venv && source .venv/bin/activate
+
+# Install dia
+pip install -e .
+```
+
+Or you can install without cloning.
+
+```bash
+# Install directly from GitHub
+pip install git+https://github.com/nari-labs/dia.git
+```
+
+Now, run some examples.
+
+```bash
+python example/simple.py
+```
+</details>
+
+
+<details>
+<summary>Install via uv</summary>
+
+You need [uv](https://docs.astral.sh/uv/) to be installed.
+
+```bash
+# Clone this repository
+git clone https://github.com/nari-labs/dia.git
+cd dia
+```
+
+Run some examples directly.
+
+```bash
+uv run example/simple.py
+```
+
+</details>
+
+<details>
+<summary>Run Gradio UI</summary>
+
+```bash
+python app.py
+
+# Or if you have uv installed
+uv run app.py
+```
+
+</details>
+
+<details>
+<summary>Run with CLI</summary>
+
+```bash
+python cli.py --help
+
+# Or if you have uv installed
+uv run cli.py --help
+```
+
+</details>
+
+> [!NOTE]
+> The model was not fine-tuned on a specific voice. Hence, you will get different voices every time you run the model.
+> You can keep speaker consistency by either adding an audio prompt, or fixing the seed.
+
+> [!IMPORTANT]
+> If you are using 5000 series GPU, you should use torch 2.8 nightly. Look at the issue [#26](https://github.com/nari-labs/dia/issues/26) for more details.
+
+## Features
+
+- Generate dialogue via `[S1]` and `[S2]` tag
+- Generate non-verbal like `(laughs)`, `(coughs)`, etc.
+  - Below verbal tags will be recognized, but might result in unexpected output.
+  - `(laughs), (clears throat), (sighs), (gasps), (coughs), (singing), (sings), (mumbles), (beep), (groans), (sniffs), (claps), (screams), (inhales), (exhales), (applause), (burps), (humming), (sneezes), (chuckle), (whistles)`
+- Voice cloning. See [`example/voice_clone.py`](example/voice_clone.py) for more information.
+  - In the Hugging Face space, you can upload the audio you want to clone and place its transcript before your script. Make sure the transcript follows the required format. The model will then output only the content of your script.
+
+
+## 💻 Hardware and Inference Speed
+
+Dia has been tested on only GPUs (pytorch 2.0+, CUDA 12.6). CPU support is to be added soon.
+The initial run will take longer as the Descript Audio Codec also needs to be downloaded.
+
+These are the speed we benchmarked in RTX 4090.
+
+| precision | realtime factor w/ compile | realtime factor w/o compile | VRAM |
+|:-:|:-:|:-:|:-:|
+| `bfloat16` | x2.1 | x1.5 | ~4.4GB |
+| `float16` | x2.2 | x1.3 | ~4.4GB |
+| `float32` | x1 | x0.9 | ~7.9GB |
+
+We will be adding a quantized version in the future.
+
+If you don't have hardware available or if you want to play with bigger versions of our models, join the waitlist [here](https://tally.so/r/meokbo).
+
+## 🪪 License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## ⚠️ Disclaimer
+
+This project offers a high-fidelity speech generation model intended for research and educational use. The following uses are **strictly forbidden**:
+
+- **Identity Misuse**: Do not produce audio resembling real individuals without permission.
+- **Deceptive Content**: Do not use this model to generate misleading content (e.g. fake news)
+- **Illegal or Malicious Use**: Do not use this model for activities that are illegal or intended to cause harm.
+
+By using this model, you agree to uphold relevant legal standards and ethical responsibilities. We **are not responsible** for any misuse and firmly oppose any unethical usage of this technology.
+
+## 🔭 TODO / Future Work
+
+- Docker support for ARM architecture and MacOS.
+- Optimize inference speed.
+- Add quantization for memory efficiency.
+
+## 🤝 Contributing
+
+We are a tiny team of 1 full-time and 1 part-time research-engineers. We are extra-welcome to any contributions!
+Join our [Discord Server](https://discord.gg/bJq6vjRRKv) for discussions.
+
+## 🤗 Acknowledgements
+
+- We thank the [Google TPU Research Cloud program](https://sites.research.google/trc/about/) for providing computation resources.
+- Our work was heavily inspired by [SoundStorm](https://arxiv.org/abs/2305.09636), [Parakeet](https://jordandarefsky.com/blog/2024/parakeet/), and [Descript Audio Codec](https://github.com/descriptinc/descript-audio-codec).
+- Hugging Face for providing the ZeroGPU Grant.
+- "Nari" is a pure Korean word for lily.
+- We thank Jason Y. for providing help with data filtering.
+
+
+## ⭐ Star History
+
+<a href="https://www.star-history.com/#nari-labs/dia&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nari-labs/dia&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nari-labs/dia&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=nari-labs/dia&type=Date" />
+ </picture>
+</a>
